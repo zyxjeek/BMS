@@ -1,0 +1,13 @@
+{% extends 'system/base.html' %}
+
+{% block content %}
+
+  <p>
+    {{ book }}：
+  </p>
+  <ul>
+    <li><p>添加日期：{{ book.date_added|date:'Y年Md日 H:i' }}</p></li>
+    <li><p>价格：{{ book.price }}</p></li>
+    <li><p>作者：{{ book.author }}</p></li>
+  </ul>
+{% endblock %}
